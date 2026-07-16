@@ -5,7 +5,7 @@ import pandas as pd
 import streamlit as st
 
 st.set_page_config(page_title="Consulta CNPJ", page_icon="🏢", layout="centered")
-st.title("🏢 Consulta de CNPJ")
+st.title(" Consulta de CNPJ")
 
 
 def limpar_cnpj(cnpj):
