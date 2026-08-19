@@ -4,6 +4,7 @@ import requests
 import pandas as pd
 import streamlit as st
 
+
 st.set_page_config(page_title="Consulta CNPJ", page_icon="🏢", layout="centered")
 st.title(" Consulta de CNPJ")
 
@@ -51,8 +52,13 @@ if st.button("Consultar", type="primary"):
                 "Razão Social": resultado.get("nome", ""),
                 "Fantasia": resultado.get("fantasia", ""),
                 "Situação": resultado.get("situacao", ""),
+                "Logradouro": resultado.get("logradouro", ""),
+                "Número": resultado.get("numero", ""),
+                "Complemento": resultado.get("complemento", ""),
+                "Bairro/Distrito": resultado.get("bairro", ""),
                 "Cidade": resultado.get("municipio", ""),
                 "UF": resultado.get("uf", ""),
+                "Ente Federativo Responsável": resultado.get("efr", ""),
                 "Atividade Principal": atividade,
             }
 
