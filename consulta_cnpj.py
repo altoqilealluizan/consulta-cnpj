@@ -52,6 +52,7 @@ if st.button("Consultar", type="primary"):
                 "Razão Social": resultado.get("nome", ""),
                 "Fantasia": resultado.get("fantasia", ""),
                 "Situação": resultado.get("situacao", ""),
+                "CEP": resultado.get("cep", ""),
                 "Logradouro": resultado.get("logradouro", ""),
                 "Número": resultado.get("numero", ""),
                 "Complemento": resultado.get("complemento", ""),
